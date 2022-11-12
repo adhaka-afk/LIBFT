@@ -6,7 +6,17 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 18:14:19 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/10 18:14:20 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/11/12 11:27:57 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
+int	ft_strlcat(char *dst, const char *src, size_t a)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+}

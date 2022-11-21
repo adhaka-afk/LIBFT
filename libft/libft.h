@@ -1,37 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 18:14:25 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/21 20:25:44 by adhaka           ###   ########.fr       */
+/*   Created: 2022/11/16 13:57:31 by adhaka            #+#    #+#             */
+/*   Updated: 2022/11/16 14:04:15 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <unistd.h>
 
-int	ft_strlcpy(char *dst, const char *src, size_t size)
-{
-	int	a;
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+void	ft_memcpy(void *dest, void *src, size_t n);
+int		ft_strlen(const char *str);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
 
-	a = 0;
-	if (dst == NULL)
-		return ('\0');
-	while (a <= size)
-	{
-		dst[a] = src[a];
-		a++;
-	}
-	dst[a] = '\0';
-}
-
-int	main(void)
-{
-	char	d[100];
-	char	s[15];
-
-	s[15] = "daily cool";
-	printf("output %d\n", ft_strlcpy(d, s, 3));
-}
+#endif

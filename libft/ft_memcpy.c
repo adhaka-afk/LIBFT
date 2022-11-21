@@ -6,11 +6,11 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 15:41:37 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/12 16:32:39 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/11/16 14:25:26 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include<stdio.h>
+#include<stdio.h>
 
 void	ft_memcpy(void *dest, void *src, size_t n)
 {
@@ -18,9 +18,10 @@ void	ft_memcpy(void *dest, void *src, size_t n)
 	char	*newdest;
 	int		i;
 
+	i = 0;
 	newsrc = (char *)src;
 	newdest = (char *)dest;
-	while (i < n)
+	while (i < n && newsrc[i] != '\0')
 	{
 		newdest[i] = newsrc[i];
 		i++;

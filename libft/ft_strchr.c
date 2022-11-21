@@ -1,37 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 18:14:25 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/21 20:25:44 by adhaka           ###   ########.fr       */
+/*   Created: 2022/11/20 18:07:41 by adhaka            #+#    #+#             */
+/*   Updated: 2022/11/21 18:49:36 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_strlcpy(char *dst, const char *src, size_t size)
+char	*ft_strchr(const char *s, int c)
 {
-	int	a;
-
-	a = 0;
-	if (dst == NULL)
-		return ('\0');
-	while (a <= size)
+	if (!*s)
+		return (NULL);
+	while (*s != '\0')
 	{
-		dst[a] = src[a];
-		a++;
+		if (*s == c)
+			return ((char *)s);
+		s++;
 	}
-	dst[a] = '\0';
+	return (NULL);
 }
 
-int	main(void)
-{
-	char	d[100];
-	char	s[15];
+// int	main(void)
+// {
+// 	char	*str;
 
-	s[15] = "daily cool";
-	printf("output %d\n", ft_strlcpy(d, s, 3));
-}
+// 	str = "";
+// 	printf("the output is %s\n", ft_strchr(str, 'a'));
+// }

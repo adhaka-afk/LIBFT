@@ -6,7 +6,13 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:58:03 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/12 10:58:04 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/11/16 15:06:41 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
+void	*ft_memset(void *s, int c, size_t n)
+{
+	
+}

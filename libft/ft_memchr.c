@@ -6,7 +6,16 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:37 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/12 10:57:38 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/11/16 15:03:52 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
+void	*ft_memchr(const void *str, int c, size_t n)
+{
+	int	i;
+
+	i = 0;
+	
+}

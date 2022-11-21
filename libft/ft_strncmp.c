@@ -6,7 +6,13 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:01:38 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/12 11:01:39 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/11/16 15:08:25 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
+{
+
+}

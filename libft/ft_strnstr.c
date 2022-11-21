@@ -6,7 +6,13 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:01:42 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/12 11:01:43 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/11/16 15:09:47 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
+char	*ft_strnstr(const char *s1, const char *s2, size_t len)
+{
+	
+}

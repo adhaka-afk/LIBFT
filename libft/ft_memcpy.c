@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 15:41:37 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/16 14:25:26 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/11/23 20:37:35 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ void	ft_memcpy(void *dest, void *src, size_t n)
 
 // int	main(void)
 // {
-// 	char source[] = "daily   1212313";
-// 	char destination[] = "123";
+// 	char source[30] = "daily   1212313";
+// 	char destination[45] = "123";
 // 	printf("dest before %s\n", destination);
 
-// 	ft_memcpy(destination, source, sizeof(source));
-// 	printf ("the result %s\n", destination);
+// 	ft_memcpy(destination, source, 2);
+// 	printf ("dest after %s\n", destination);
 // }

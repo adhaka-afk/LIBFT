@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:27 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/01 00:03:56 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/02 17:06:26 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,19 +38,19 @@ void	ft_bzero(void *s, size_t n)
 
 // 	n = 3;
 
-// 	//s = "12123";
-// 	//s = malloc(n);
-// 	ft_bzero(s, n);
-// 	//bzero(s, n);
-// 	// int i = 0;
-// 	// while (i < n)
-// 	// {
-// 	// 	if (s[i] != '\0')
-// 	// 		printf ("char: %c\n", s[i]);
-// 	// 	else
-// 	// 		printf ("char: number %i is null\n", i);
-// 	// 	i++;
-// 	// }
+	// //s = "12123";
+	// //s = malloc(n);
+	// ft_bzero(s, n);
+	// //bzero(s, n);
+	// // int i = 0;
+	// // while (i < n)
+	// // {
+	// // 	if (s[i] != '\0')
+	// // 		printf ("char: %c\n", s[i]);
+	// // 	else
+	// // 		printf ("char: number %i is null\n", i);
+	// // 	i++;
+	// // }
 
 // 	// return (0);
 // 	printf("converted string is %s\n", s);

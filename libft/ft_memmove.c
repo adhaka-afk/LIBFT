@@ -6,11 +6,12 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:52 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/23 21:03:16 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/02 20:29:53 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <string.h>
 #include "libft.h"
 
 void	ft_memmove(void *dest, const void *src, size_t n)
@@ -44,12 +45,11 @@ void	ft_memmove(void *dest, const void *src, size_t n)
 
 int	main(void)
 {
-	char	*source;
-	char	*destination;
+	char	source[] = "daily   1212313";
+	char	destination[] = "123sdfdfafadfasfafadfadf";
 
-	source = "daily   1212313";
-	destination = "123";
+	memmove(destination, source, 5);
 	printf("dest before %s\n", destination);
-	ft_memmove(destination, source, sizeof(source));
-	printf ("dest after %s\n", destination);
+	ft_memmove(destination, source, 5);
+	printf ("dest after1 %s\n", destination);
 }

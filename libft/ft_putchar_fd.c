@@ -6,13 +6,14 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 20:46:50 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/02 20:47:31 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/12 15:58:21 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include <stdio.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {
-	
+	write(fd, &c, 1);
 }

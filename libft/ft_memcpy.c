@@ -6,26 +6,29 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 15:41:37 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/23 20:37:35 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/12 15:44:35 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include <stdio.h>
 
-void	ft_memcpy(void *dest, void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char	*newsrc;
-	char	*newdest;
-	int		i;
+	char	*newdst;
+	size_t	i;
 
 	i = 0;
 	newsrc = (char *)src;
-	newdest = (char *)dest;
-	while (i < n && newsrc[i] != '\0')
+	newdst = (char *)dst;
+	if (!dst && !src)
+		return (NULL);
+	while (i < n)
 	{
-		newdest[i] = newsrc[i];
+		newdst[i] = newsrc[i];
 		i++;
 	}
+	return (dst);
 }
 
 // int	main(void)

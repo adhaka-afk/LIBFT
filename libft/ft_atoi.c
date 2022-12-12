@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:23 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/30 18:13:08 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/12 12:57:21 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,14 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	a = 0;
 	res = 0;
-	if (str[0] == '-')
+	while (str[a] == 32 || (str[a] >= 9 && str[a] <= 13))
+		a++;
+	if (str[a] == '-')
 	{
 		sign = -1;
 		a++;
 	}
-	else if (str[0] == '+')
+	else if (str[a] == '+')
 		a++;
 	while (str[a] != '\0')
 	{
@@ -43,7 +45,7 @@ int	ft_atoi(const char *str)
 // {
 // 	char	*str;
 
-// 	str = "++2ab123";
+// 	str = "5889784455caggag!";
 // 	printf("converted string value is %d\n", ft_atoi(str));
 // 	printf("converted string value is %d\n", atoi(str));
 // }

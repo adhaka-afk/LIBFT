@@ -6,50 +6,45 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:52 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/02 20:29:53 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/12 16:13:57 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <string.h>
-#include "libft.h"
+// #include <string.h>
 
-void	ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*newdest;
+	char	*newdst;
 	char	*newsrc;
-	int		i;
-	int		a;
+	size_t	a;
 
 	a = 0;
-	i = ft_strlen(src);
 	newsrc = (char *)src;
-	newdest = (char *)dest;
-	if (newdest < newsrc)
+	newdst = (char *)dst;
+	if (!dst && !src)
+		return (NULL);
+	if (dst > src)
+		while (len-- > 0)
+			newdst[len] = newsrc[len];
+	else
 	{
-		while (a < n && newsrc[a] != '\0' && newdest[a] != '\0')
+		while (a < len)
 		{
-			newdest[a] = newsrc[a];
+			newdst[a] = newsrc[a];
 			a++;
 		}
 	}
-	else if (newdest > newsrc)
-	{
-		while (newsrc[i - 1] != '\0')
-		{
-			newdest[i] = newsrc[i];
-			i--;
-		}
-	}
+	return (dst);
 }
 
-int	main(void)
-{
-	char	source[] = "daily   1212313";
-	char	destination[] = "123sdfdfafadfasfafadfadf";
+// int	main(void)
+// {
+// 	char	abc[] = "abcde";
+// 	char	dest[1] = "\0";
 
-	memmove(destination, source, 5);
-	printf("dest before %s\n", destination);
-	ft_memmove(destination, source, 5);
-	printf ("dest after1 %s\n", destination);
-}
+// ft_memmove(dest, abc, 2);
+// // memmove(dest, abc, 2);
+// printf("the dest %s\n", dest);
+
+// }

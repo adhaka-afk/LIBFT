@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:37 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/23 20:37:55 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/12 17:26:40 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int				a;
+	size_t			a;
 	unsigned char	*temp;
 
 	temp = (unsigned char *) s;
 	a = 0;
-	while (a < n && *temp != '\0')
+	while (a < n)
 	{
 		if (*temp == (unsigned char)c)
 			return (temp);

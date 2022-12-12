@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 17:13:46 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/10 18:28:51 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/12 13:54:32 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalpha(int c)
 {
-	if (64 < c && c < 91 || 98 < c && c < 123)
+	if (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'))
 		return (1);
 	else
 		return (0);
@@ -23,6 +23,6 @@ int	ft_isalpha(int c)
 // int	main(void)
 // {
 // 	int a;
-// 	a = 'A';
+// 	a = '3';
 // 	printf ( "the value %d\n", ft_isalpha(a));
 // }

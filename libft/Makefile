@@ -6,7 +6,7 @@
 #    By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 11:08:46 by adhaka            #+#    #+#              #
-#    Updated: 2022/12/12 21:01:32 by adhaka           ###   ########.fr        #
+#    Updated: 2022/12/13 16:34:01 by adhaka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,8 +31,7 @@ SRCS 			= 	ft_atoi.c \
 					ft_strchr.c \
 					ft_strrchr.c \
 					ft_memchr.c \
-					ft_strlcpy.c \
-
+					ft_strncmp.c \
 
 
 OBJS			= $(SRCS:.c=.o)

@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 18:14:19 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/12 20:58:13 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/15 07:04:44 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,23 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	int		a;
-	char	*newsrc;
+	size_t	dlen;
+	size_t	dlen1;
+	size_t	slen;
+	size_t	a;
 
+	dlen = ft_strlen(dst);
+	dlen1 = ft_strlen(dst);
+	slen = ft_strlen(src);
 	a = 0;
+	if (size <= dlen)
+		return (slen + size);
+	while ((src[a] != '\0') && (a < (size - dlen - 1)))
+	{
+		dst[dlen1] = src[a];
+		a++;
+		dlen1++;
+	}
+	dst[dlen1] = '\0';
+	return (dlen + slen);
 }

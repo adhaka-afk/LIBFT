@@ -6,7 +6,7 @@
 #    By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 11:08:46 by adhaka            #+#    #+#              #
-#    Updated: 2022/12/13 16:34:01 by adhaka           ###   ########.fr        #
+#    Updated: 2022/12/15 07:33:37 by adhaka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,11 +27,15 @@ SRCS 			= 	ft_atoi.c \
 					ft_tolower.c \
 					ft_toupper.c \
 					ft_memmove.c \
+					ft_memcmp.c \
 					ft_putchar_fd.c \
 					ft_strchr.c \
 					ft_strrchr.c \
 					ft_memchr.c \
 					ft_strncmp.c \
+					ft_strlcpy.c \
+					ft_strlcat.c \
+					ft_strnstr.c \
 
 
 OBJS			= $(SRCS:.c=.o)

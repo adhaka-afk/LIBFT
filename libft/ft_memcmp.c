@@ -6,16 +6,16 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:43 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/07 04:27:59 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/15 04:00:51 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-// #include <string.h>
+#include <stdio.h>
+#include <string.h>
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int				a;
+	size_t			a;
 	unsigned char	*str1;
 	unsigned char	*str2;
 

@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 18:14:25 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/12 21:19:06 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/15 04:02:33 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,15 @@ int	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t		a;
 
 	a = 0;
-	if (!dst)
-		return ('\0');
-	while (a < size && *src)
+	if (!size)
+		return (ft_strlen(src));
+	while ((a < size - 1) && (src[a] != '\0'))
 	{
 		dst[a] = src[a];
 		a++;
 	}
-	dst[a + 1] = '\0';
-	return (a);
+	dst[a] = '\0';
+	return (ft_strlen(src));
 }
 
 // int	main(void)

@@ -6,7 +6,7 @@
 #    By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 11:08:46 by adhaka            #+#    #+#              #
-#    Updated: 2022/12/15 07:33:37 by adhaka           ###   ########.fr        #
+#    Updated: 2022/12/26 16:44:23 by adhaka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@
 
 SRCS 			= 	ft_atoi.c \
 					ft_bzero.c \
+					ft_calloc.c \
 					ft_isalnum.c \
 					ft_strlen.c \
 					ft_putendl_fd.c \
@@ -36,7 +37,9 @@ SRCS 			= 	ft_atoi.c \
 					ft_strlcpy.c \
 					ft_strlcat.c \
 					ft_strnstr.c \
-
+					ft_substr.c \
+					ft_strdup.c \
+					ft_strjoin.c \
 
 OBJS			= $(SRCS:.c=.o)
 

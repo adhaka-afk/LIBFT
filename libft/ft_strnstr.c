@@ -6,31 +6,44 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:01:42 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/15 08:35:13 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/24 09:13:43 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-char	*ft_strnstr(const char *s1, const char *s2, size_t len)
+char	*ft_strnstr(const char *hay, const char *needle, size_t len)
 {
 	size_t	a;
-	char	*s1n;
-	char	*s2n;
+	char	*h;
+	char	*n;
 
-	a = 0;
-	s1n = (char *)s1;
-	s2n = (char *)s2;
-	if (!s2n)
-		return (s1n);
-	while (a < len)
+	h = (char *)hay;
+	n = (char *)needle;
+	if (!(*n) || n == NULL)
+		return (h);
+	while (*h && len)
 	{
-		if ((s2n[a] == s1n[a]) && (s1n[a] != '\0'))
+		a = 0;
+		while ((n[a] == h[a]) && a < len)
 		{
-				a++;
+			if (!(n[a + 1]))
+				return (h);
+			a++;
 		}
-		return (s1n);
+		h++;
+		len--;
 	}
 	return (NULL);
 }
+
+// int main(void)
+// {
+// 	const char	*str;
+
+// 	if (!(str = ft_strnstr("lorem ipsum dolor sit amet", "ipsumm", 30)))
+// 		printf("NULL");
+// 	else
+// 		printf("%s\n", str);
+// }

@@ -6,13 +6,16 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 20:42:02 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/02 20:42:31 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/26 19:27:35 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include<stdlib.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
+	char	*new;
+	size_t	a;
+
 
 }

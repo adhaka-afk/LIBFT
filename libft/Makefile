@@ -6,7 +6,7 @@
 #    By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 11:08:46 by adhaka            #+#    #+#              #
-#    Updated: 2022/12/26 16:44:23 by adhaka           ###   ########.fr        #
+#    Updated: 2022/12/28 00:10:12 by adhaka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,7 @@ SRCS 			= 	ft_atoi.c \
 					ft_memmove.c \
 					ft_memcmp.c \
 					ft_putchar_fd.c \
+					ft_putnbr_fd.c \
 					ft_strchr.c \
 					ft_strrchr.c \
 					ft_memchr.c \
@@ -40,7 +41,10 @@ SRCS 			= 	ft_atoi.c \
 					ft_substr.c \
 					ft_strdup.c \
 					ft_strjoin.c \
-
+					ft_strmapi.c \
+					ft_striteri.c \
+					ft_strtrim.c \
+					
 OBJS			= $(SRCS:.c=.o)
 
 # BONUS			=	ft_lstadd_back.c \

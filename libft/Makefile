@@ -6,11 +6,11 @@
 #    By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 11:08:46 by adhaka            #+#    #+#              #
-#    Updated: 2022/12/29 05:32:38 by adhaka           ###   ########.fr        #
+#    Updated: 2022/12/29 23:56:59 by adhaka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS 			= 	ft_atoi.c \
+SRCS 			=	ft_atoi.c \
 					ft_bzero.c \
 					ft_calloc.c \
 					ft_isalnum.c \
@@ -43,21 +43,9 @@ SRCS 			= 	ft_atoi.c \
 					ft_striteri.c \
 					ft_strtrim.c \
 					ft_itoa.c \
-					ft_split.c \
+					ft_split.c
 
 OBJS			= $(SRCS:.c=.o)
-
-# BONUS			=	ft_lstadd_back.c \
-# 					ft_lstadd_front.c \
-# 					ft_lstclear.c \
-# 					ft_lstdelone.c \
-# 					ft_lstiter.c \
-# 					ft_lstlast.c \
-# 					ft_lstmap.c \
-# 					ft_lstnew.c \
-# 					ft_lstsize.c \
-
-# BONUS_OBJS		= $(BONUS:.c=.o)
 
 CC				= cc
 
@@ -80,7 +68,4 @@ fclean:			clean
 
 re:				fclean all
 
-# bonus:			$(OBJS) $(BONUS_OBJS)
-# 				ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
-
-.PHONY:			all clean fclean re bonus
+.PHONY:			all clean fclean re

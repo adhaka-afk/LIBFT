@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:01:33 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/12 20:21:27 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/29 03:23:09 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strrchr(const char *s, int c)
 	temp = NULL;
 	while (*s != '\0')
 	{
-		if (*s == c)
+		if (*s == (char)c)
 			temp = s;
 		s++;
 	}

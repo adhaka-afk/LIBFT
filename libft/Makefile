@@ -6,7 +6,7 @@
 #    By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 11:08:46 by adhaka            #+#    #+#              #
-#    Updated: 2022/12/28 00:10:12 by adhaka           ###   ########.fr        #
+#    Updated: 2022/12/29 02:48:58 by adhaka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,7 +44,9 @@ SRCS 			= 	ft_atoi.c \
 					ft_strmapi.c \
 					ft_striteri.c \
 					ft_strtrim.c \
-					
+					ft_itoa.c \
+					ft_split.c \
+
 OBJS			= $(SRCS:.c=.o)
 
 # BONUS			=	ft_lstadd_back.c \

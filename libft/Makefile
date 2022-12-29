@@ -6,11 +6,9 @@
 #    By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/12 11:08:46 by adhaka            #+#    #+#              #
-#    Updated: 2022/12/29 02:48:58 by adhaka           ###   ########.fr        #
+#    Updated: 2022/12/29 05:32:38 by adhaka           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-
 
 SRCS 			= 	ft_atoi.c \
 					ft_bzero.c \
@@ -62,15 +60,17 @@ OBJS			= $(SRCS:.c=.o)
 # BONUS_OBJS		= $(BONUS:.c=.o)
 
 CC				= cc
+
 RM				= rm -f
+
 CFLAGS			= -Wall -Wextra -Werror
 
 NAME			= libft.a
 
-all:			$(NAME)
-
 $(NAME):		$(OBJS)
 				ar -rcs $(NAME) $(OBJS)
+
+all:			$(NAME)
 
 clean:
 				$(RM) $(OBJS)

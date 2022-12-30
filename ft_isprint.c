@@ -6,11 +6,11 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 19:19:52 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/12 13:55:51 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 15:01:17 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -19,8 +19,3 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-// int	main(void)
-// {
-// 	printf ("return value %d\n", ft_isprint(35));
-// }

@@ -6,11 +6,11 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/20 18:07:41 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/29 03:22:24 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 15:03:39 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -24,11 +24,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	char	*str;
-
-// 	str = "";
-// 	printf("the output is %s\n", ft_strchr(str, 'a'));
-// }

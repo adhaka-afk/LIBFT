@@ -6,7 +6,7 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 10:57:23 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/29 23:27:46 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 14:58:43 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-
-// int	main(void)
-// {
-// 	char	*str;
-
-// 	str = "5889784455caggag!";
-// 	printf("converted string value is %d\n", ft_atoi(str));
-// 	printf("converted string value is %d\n", atoi(str));
-// }

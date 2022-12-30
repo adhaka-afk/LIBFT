@@ -6,11 +6,10 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 20:37:47 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/29 05:26:37 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 15:04:48 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

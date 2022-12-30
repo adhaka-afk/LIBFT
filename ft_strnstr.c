@@ -6,11 +6,10 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/12 11:01:42 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/24 09:13:43 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 15:04:30 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *hay, const char *needle, size_t len)
@@ -37,13 +36,3 @@ char	*ft_strnstr(const char *hay, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// int main(void)
-// {
-// 	const char	*str;
-
-// 	if (!(str = ft_strnstr("lorem ipsum dolor sit amet", "ipsumm", 30)))
-// 		printf("NULL");
-// 	else
-// 		printf("%s\n", str);
-// }

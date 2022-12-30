@@ -6,11 +6,11 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 15:21:12 by adhaka            #+#    #+#             */
-/*   Updated: 2022/11/10 16:12:49 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 15:05:04 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
@@ -19,8 +19,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-// int main(void)
-// {
-//     printf("converted value %c \n", ft_toupper('a'));
-// }

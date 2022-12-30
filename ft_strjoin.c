@@ -6,11 +6,10 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 20:41:25 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/26 17:07:44 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 15:03:55 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

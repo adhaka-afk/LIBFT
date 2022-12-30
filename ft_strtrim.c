@@ -6,12 +6,10 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 20:42:02 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/29 05:14:21 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 15:04:41 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <string.h>
 #include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)

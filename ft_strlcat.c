@@ -6,11 +6,10 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 18:14:19 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/15 07:04:44 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 15:03:59 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

@@ -6,11 +6,11 @@
 /*   By: adhaka <adhaka@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 20:36:16 by adhaka            #+#    #+#             */
-/*   Updated: 2022/12/30 15:01:35 by adhaka           ###   ########.fr       */
+/*   Updated: 2022/12/30 17:06:30 by adhaka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 static int	ft_len(int n)
 {

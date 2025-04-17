@@ -17,3 +17,8 @@ Websites that can assist you with a variety of functions include:
  There are quite some restrictions for 42 students to comply with while writing the code but if you're not a 42 student
  then you're technically not required to adhere to them but for the sake of challenge I would recommend doing the project
  with the restrictions.
+
+
+## 🚀 Next Project
+
+[Ft_printf](https://github.com/adhaka-afk/FT_PRINTF)
